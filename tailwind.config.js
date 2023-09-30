@@ -6,6 +6,10 @@ module.exports = {
       xs: {max: '425px'},
     },
     extend: {
+      colors: {
+        light: "#EFEFEF",
+        primary: "#1D782B"
+      },
       spacing: {
         screen: '100vw',
         full: '100%',
@@ -70,7 +74,7 @@ module.exports = {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)',
       },
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
+        sans: ['"Source Sans 3"', 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
         serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
         mono: ['ui-monospace', 'Menlo', 'Consolas', 'monospace'],
       },
