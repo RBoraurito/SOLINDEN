@@ -13,7 +13,8 @@ addressLink: 'https://maps.app.goo.gl/Ec46ZB5rf5FnjX7k6'
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link media="screen" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600;900&display=swap" rel="stylesheet">
   </push>
-  <div class="bg-white font-sans">
+  <div class="bg-white font-sans relative">
+    <img src="images/waves.png" alt="" class="absolute bottom-0 left-0 right-0 mx-auto z-10">
     <table align="center">
       <tr>
         <td class="w-[650px] max-w-full">
@@ -54,13 +55,13 @@ addressLink: 'https://maps.app.goo.gl/Ec46ZB5rf5FnjX7k6'
               </td>
             </tr>
           </table>
-          <table align="center" style="background-image: url('images/waves.png');" class="w-full relative py-[22px] pl-8 bg-primary xs:pr-4">
+          <table align="center" class="w-full relative py-[22px] pl-8 bg-primary xs:pr-4">
             <tr class="hidden xs:table-row">
               <td class="w-full pb-2">
                 <table class="font-semibold text-lg leading-none">
                   <tr>
                     <td class="pr-1 pt-[2px]">
-                      <img class="w-5 h-5" src="images/phone.png" alt="Phone logo">
+                      <img class="w-5 h-5 absolute top-1" src="images/phone.png" alt="Phone logo">
                     </td>
                     <td>
                       <a href="tel:{{ page.phones }}" class="text-light no-underline">
