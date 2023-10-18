@@ -1,0 +1,188 @@
+---
+name: "Vladimir Acevedo"
+position: "Tecnico"
+phones: "829-344-9768"
+email: "vladimira@solinden.com"
+address: "Calle Pimpina No.16 casi esq Carretera de Hato Nuevo, Sector Manoguayabo. Santo Domingo Oeste. Rep. Dominicana. 10902"
+addressLink: "https://maps.app.goo.gl/Ec46ZB5rf5FnjX7k6"
+---
+
+<x-main>
+  <push name="head">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      media="screen"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600;900&display=swap"
+      rel="stylesheet"
+    />
+  </push>
+  <div class="bg-white font-sans relative">
+    <table align="center">
+      <tr>
+        <td class="w-[650px] max-w-full">
+          <table class="px-4 pt-6">
+            <tr class="xs:hidden">
+              <td class="text-black text-center w-[40%]">
+                <h1 class="font-black text-2xl my-0">{{ page.name }}</h1>
+                <h2 class="font-semibold text-lg my-0">{{ page.position }}</h2>
+              </td>
+              <td>
+                <img src="images/logo.png" alt="Logo de Solinden" />
+              </td>
+            </tr>
+            <tr class="hidden xs:table-row">
+              <td>
+                <img src="images/logo.png" alt="Logo de Solinden" />
+              </td>
+            </tr>
+            <tr class="hidden xs:table-row">
+              <td class="text-black text-center w-[40%] py-6">
+                <h1 class="font-black text-2xl my-0">{{ page.name }}</h1>
+                <h2 class="font-semibold text-lg my-0">{{ page.position }}</h2>
+              </td>
+            </tr>
+          </table>
+          <img src="images/waves.png" alt="Ondas con los colores de SOLINDEN" />
+          <table
+            align="center"
+            class="w-full relative py-[22px] pl-8 bg-primary pr-4"
+          >
+            <tr class="hidden xs:table-row">
+              <td class="w-full pb-2">
+                <table class="font-semibold text-lg leading-none">
+                  <tr>
+                    <td class="pr-1 pt-[2px]">
+                      <img
+                        class="w-5 h-5 absolute top-1"
+                        src="images/phone.png"
+                        alt="Phone logo"
+                      />
+                    </td>
+                    <td>
+                      <a
+                        href="tel:{{ page.phones }}"
+                        class="text-light no-underline"
+                      >
+                        {{ page.phones }}
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pr-1 pt-1">
+                      <img class="w-5 h-5" src="images/web.png" alt="" />
+                    </td>
+                    <td>
+                      <a
+                        href="http://www.solinden.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-light no-underline"
+                      >
+                        www.solinden.com
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pr-1 pt-1">
+                      <img class="w-5 h-5" src="images/email.png" alt="" />
+                    </td>
+                    <td>
+                      <a
+                        href="mailto:{{page.email}}"
+                        class="text-light no-underline"
+                      >
+                        {{page.email}}
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-[45%] xs:hidden">
+                <table class="font-semibold text-lg leading-none">
+                  <tr>
+                    <td class="pr-1 pt-[2px]">
+                      <img
+                        class="w-5 h-5"
+                        src="images/phone.png"
+                        alt="Phone icon"
+                      />
+                    </td>
+                    <td>
+                      <a
+                        href="tel:{{ page.phones }}"
+                        class="text-light no-underline"
+                      >
+                        {{ page.phones }}
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pr-1 pt-1">
+                      <img
+                        class="w-5 h-5"
+                        src="images/web.png"
+                        alt="Web icon"
+                      />
+                    </td>
+                    <td>
+                      <a
+                        href="http://www.solinden.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-light no-underline"
+                      >
+                        www.solinden.com
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pr-1 pt-1">
+                      <img
+                        class="w-5 h-5"
+                        src="images/email.png"
+                        alt="Email icon"
+                      />
+                    </td>
+                    <td>
+                      <a
+                        href="mailto:{{page.email}}"
+                        class="text-light no-underline"
+                      >
+                        {{page.email}}
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w-[55%] xs:w-full">
+                <table class="font-semibold text-lg leading-tight">
+                  <tr>
+                    <td class="pr-1 pt-[2px] align-baseline w-5">
+                      <img
+                        class="w-5 h-5"
+                        src="images/location.png"
+                        alt="Location icon"
+                      />
+                    </td>
+                    <td>
+                      <a
+                        href="{{ page.addressLink }}"
+                        style="text-decoration: none"
+                        class="text-light"
+                      >
+                        {{ page.address }}
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</x-main>
